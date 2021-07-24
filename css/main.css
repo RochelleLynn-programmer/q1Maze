@@ -1,0 +1,60 @@
+:root {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: black;
+  color: purple;
+}
+
+.line {
+  border: 1px purple solid;
+}
+
+#maze {
+  height: 500px;
+  width: 500px;
+  background-color: purple;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px purple dashed;
+  color: black;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-grow: 1;
+}
+
+.wall {
+  background-color: black;
+  flex-grow: 1;
+}
+.floor {
+  flex-grow: 1;
+}
+.start {
+  background-color: rgb(62, 34, 139);
+}
+.finish {
+  background-color: rgb(134, 17, 17);
+}
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#player {
+  align-self: center;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: magenta;
+}
+
+#reset {
+  background-color: purple;
+  margin-top: 10px;
+}
